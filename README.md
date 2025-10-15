@@ -25,12 +25,6 @@ A fast, native CLI tool for deploying and managing CDF services on dev clusters.
 The tool is ready to use via the JAR file:
 
 ```bash
-# Build the JAR
-./gradlew build
-
-# Run directly
-java -jar build/libs/cdf-dev-1.0.0.jar --help
-
 # Create an alias for convenience (add to ~/.zshrc or ~/.bashrc)
 alias cdf-dev='java -jar ~/Desktop/cdf-dev/build/libs/cdf-dev-1.0.0.jar'
 ```
@@ -47,17 +41,14 @@ make install
 cdf-dev --help
 ```
 
-### Option 2: Download pre-built binary
+### Option 2: Build and Run JAR (Recommended)
 
 ```bash
-# Download the latest release
-curl -L https://github.com/your-org/cdf-dev/releases/latest/download/cdf-dev-macos-amd64 -o cdf-dev
+# Build and install
+./install.sh
 
-# Make it executable
-chmod +x cdf-dev
-
-# Move to PATH
-sudo mv cdf-dev /usr/local/bin/
+# Verify installation
+cdf-dev --help
 ```
 
 ## Quick Start
